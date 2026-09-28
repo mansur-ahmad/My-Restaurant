@@ -1,0 +1,686 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Restaurant</title>
+
+
+  <link rel="stylesheet" href="/src/assets/css/all.min.css">
+  <link rel="stylesheet" href="/src/assets/css/style.css">
+</head>
+
+<body>
+
+
+  <!-- heder start -->
+  <header class="w-full bg-white border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+      <div class="h-20 flex items-center justify-between">
+
+        <!-- Logo -->
+        <a href="#" class="flex items-center">
+          <img src="/src/assets/images/logo-2.png" alt="FoodHub Logo" class="w-[220px] h-auto object-contain" />
+        </a>
+
+        <!-- Navigation -->
+        <nav class="hidden md:flex items-center gap-8">
+          <a href="#" class="font-medium text-gray-950 transition hover:text-[#F0A500]">
+            Home
+          </a>
+
+          <a href="#menu" class="font-medium text-gray-500 transition hover:text-[#F0A500]">
+            Menu
+          </a>
+
+          <a href="#about" class="font-medium text-gray-500 transition hover:text-[#F0A500]">
+            About
+          </a>
+
+          <a href="dashboard.html" class="font-medium text-gray-500 transition hover:text-[#F0A500]">
+            Dashboard
+          </a>
+        </nav>
+
+        <!-- Cart + Order Button -->
+        <div class="flex items-center gap-3">
+
+          <!-- Cart -->
+          <button
+            class="relative w-11 h-11 rounded-full bg-gray-100 flex items-center justify-center text-xl hover:bg-[#F0A500] hover:text-white transition">
+            🛒
+
+            <span
+              class="absolute -top-1 -right-1 w-5 h-5 rounded-full text-xs text-white flex items-center justify-center"
+              style="background-color: black;">
+              2
+            </span>
+          </button>
+
+          <!-- Order Button -->
+          <button
+            class="hidden sm:block px-5 py-2.5 rounded-full text-white font-semibold shadow-sm transition hover:scale-105"
+            style="background-color: #F0A500;">
+            Order Now
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+  </header>
+  <!-- heder end -->
+
+
+
+
+  <!-- hero start -->
+  <section class="relative min-h-[550px] flex items-center overflow-hidden bg-center bg-cover bg-no-repeat" style="
+    background-image: url('/src/assets/images/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  ">
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black/55"></div>
+
+    <!-- Content -->
+    <div class="relative z-10 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl text-center md:text-left">
+
+        <p class="inline-block mb-4 px-4 py-2 rounded-full text-sm font-semibold text-white"
+          style="background-color: #F0A500;">
+          🍴 Welcome to FoodHub
+        </p>
+
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-white">
+          Delicious Food,
+          <span style="color: #F0A500;">Delivered</span>
+          To Your Door.
+        </h1>
+
+        <p class="mt-5 text-base sm:text-lg leading-7 text-gray-200 max-w-xl">
+          Enjoy fresh, delicious and tasty meals made with love.
+          Order your favorite food and enjoy it from the comfort of your home.
+        </p>
+
+        <div class="mt-8 flex flex-wrap gap-4 justify-center md:justify-start">
+          <a href="#menu" class="px-7 py-3.5 rounded-full text-white font-semibold shadow-lg
+                 transition duration-300 hover:scale-105" style="background-color: #F0A500;">
+            Order Now
+          </a>
+
+          <a href="#menu" class="px-7 py-3.5 rounded-full border-2 border-white
+                 text-white font-semibold transition duration-300
+                 hover:bg-white hover:text-gray-900">
+            View Menu
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- hero end -->
+
+
+  <!-- ================= PRODUCT SECTION ================= -->
+  <section id="menu" class="bg-gray-50 py-20">
+
+    <!-- Section Header -->
+    <div class="max-w-7xl mx-auto px-4 text-center">
+
+      <p class="text-sm font-bold tracking-[0.3em] uppercase" style="color: #F0A500;">
+        OUR MENU
+      </p>
+
+      <h2 class="mt-4 text-4xl md:text-5xl font-extrabold text-slate-900">
+        Choose Your
+        <span style="color: #F0A500;">Favorite Food</span>
+      </h2>
+
+      <p class="mt-5 max-w-2xl mx-auto text-gray-500 leading-7">
+        Freshly prepared food made with quality ingredients.
+        Pick your favorite item and add it to your cart.
+      </p>
+
+    </div>
+
+
+    <!-- Product Grid -->
+    <div class="max-w-7xl mx-auto px-4 mt-12
+           grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7">
+
+
+      <!-- ================= CARD 1 ================= -->
+      <div class="group bg-white rounded-2xl overflow-hidden border border-gray-200
+             shadow-sm hover:shadow-xl transition duration-300 hover:-translate-y-1">
+
+        <!-- Image -->
+        <div class="relative h-56 overflow-hidden">
+
+          <img src="/src/assets/images/foods/Chicken_Burger.jpg" alt="Chicken Burger"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+
+          <!-- Price -->
+          <span class="absolute top-4 right-4 px-4 py-2 rounded-full
+                 text-white text-sm font-bold shadow" style="background-color: #F0A500;">
+            $12.00
+          </span>
+
+        </div>
+
+        <!-- Content -->
+        <div class="p-5">
+
+          <h3 class="text-xl font-bold text-slate-900">
+            Chicken Burger
+          </h3>
+
+          <!-- Rating -->
+          <div class="flex items-center gap-1 mt-3">
+            <span style="color: #F0A500;">★★★★★</span>
+            <span class="text-sm text-gray-400">(4.5)</span>
+          </div>
+
+          <p class="mt-2 text-sm text-gray-500 leading-6">
+            Crispy chicken, fresh vegetables and special sauce in a soft bun.
+          </p>
+
+          <!-- Button -->
+          <button class="w-full mt-5 py-3 rounded-xl text-white font-semibold
+                 transition duration-300 hover:opacity-90  hover:scale-[1.02]" style="background-color: #F0A500;">
+            Add to Cart
+          </button>
+
+        </div>
+      </div>
+
+
+      <!-- ================= CARD 2 ================= -->
+      <div class="group bg-white rounded-2xl overflow-hidden border border-gray-200
+             shadow-sm hover:shadow-xl transition duration-300 hover:-translate-y-1">
+
+        <div class="relative h-56 overflow-hidden">
+
+          <img src="/src/assets/images/foods/Chicken_Cheese_Pizza.jpg" alt="Chicken Cheese Pizza"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+
+          <span class="absolute top-4 right-4 px-4 py-2 rounded-full
+                 text-white text-sm font-bold shadow" style="background-color: #F0A500;">
+            $15.00
+          </span>
+
+        </div>
+
+        <div class="p-5">
+
+          <h3 class="text-xl font-bold text-slate-900">
+            Chicken Cheese Pizza
+          </h3>
+
+          <div class="flex items-center gap-1 mt-3">
+            <span style="color: #F0A500;">★★★★★</span>
+            <span class="text-sm text-gray-400">(4.5)</span>
+          </div>
+
+          <p class="mt-2 text-sm text-gray-500 leading-6">
+            Loaded with chicken, cheese and fresh vegetables.
+          </p>
+
+          <button class="w-full mt-5 py-3 rounded-xl text-white font-semibold
+                 transition duration-300 hover:opacity-90 hover:scale-[1.02]" style="background-color: #F0A500;">
+            Add to Cart
+          </button>
+
+        </div>
+      </div>
+
+
+      <!-- ================= CARD 3 ================= -->
+      <div class="group bg-white rounded-2xl overflow-hidden border border-gray-200
+             shadow-sm hover:shadow-xl transition duration-300 hover:-translate-y-1">
+
+        <div class="relative h-56 overflow-hidden">
+
+          <img src="/src/assets/images/foods/Chicken_Fry.jpg" alt="Chicken Fry"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+
+          <span class="absolute top-4 right-4 px-4 py-2 rounded-full
+                 text-white text-sm font-bold shadow" style="background-color: #F0A500;">
+            $32.00
+          </span>
+
+        </div>
+
+        <div class="p-5">
+
+          <h3 class="text-xl font-bold text-slate-900">
+            Chicken Fry
+          </h3>
+
+          <div class="flex items-center gap-1 mt-3">
+            <span style="color: #F0A500;">★★★☆☆</span>
+            <span class="text-sm text-gray-400">(3.5)</span>
+          </div>
+
+          <p class="mt-2 text-sm text-gray-500 leading-6">
+            Crispy and juicy fried chicken with special spices.
+          </p>
+
+          <button class="w-full mt-5 py-3 rounded-xl text-white font-semibold
+                 transition duration-300 hover:opacity-90 hover:scale-[1.02]" style="background-color: #F0A500;">
+            Add to Cart
+          </button>
+
+        </div>
+      </div>
+
+
+      <!-- ================= CARD 4 ================= -->
+      <div class="group bg-white rounded-2xl overflow-hidden border border-gray-200
+             shadow-sm hover:shadow-xl transition duration-300 hover:-translate-y-1">
+
+        <div class="relative h-56 overflow-hidden">
+
+          <img src="/src/assets/images/foods/Chicken_Sandwich.jpg" alt="Chicken Sandwich"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+
+          <span class="absolute top-4 right-4 px-4 py-2 rounded-full
+                 text-white text-sm font-bold shadow" style="background-color: #F0A500;">
+            $7.00
+          </span>
+
+        </div>
+
+        <div class="p-5">
+
+          <h3 class="text-xl font-bold text-slate-900">
+            Chicken Sandwich
+          </h3>
+
+          <div class="flex items-center gap-1 mt-3">
+            <span style="color: #F0A500;">★★★★★</span>
+            <span class="text-sm text-gray-400">(4.0)</span>
+          </div>
+
+          <p class="mt-2 text-sm text-gray-500 leading-6">
+            Grilled chicken with fresh lettuce, tomato and sauce.
+          </p>
+
+          <button class="w-full mt-5 py-3 rounded-xl text-white font-semibold
+                 transition duration-300 hover:opacity-90 hover:scale-[1.02]" style="background-color: #F0A500;">
+            Add to Cart
+          </button>
+
+        </div>
+      </div>
+
+
+      <!-- ================= CARD 5 ================= -->
+      <div class="group bg-white rounded-2xl overflow-hidden border border-gray-200
+             shadow-sm hover:shadow-xl transition duration-300 hover:-translate-y-1">
+
+        <div class="relative h-56 overflow-hidden">
+
+          <img src="/src/assets/images/foods/Fry_Nurger.jpg" alt="Fry Burger"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+
+          <span class="absolute top-4 right-4 px-4 py-2 rounded-full
+                 text-white text-sm font-bold shadow" style="background-color: #F0A500;">
+            $10.00
+          </span>
+
+        </div>
+
+        <div class="p-5">
+
+          <h3 class="text-xl font-bold text-slate-900">
+            Fry Burger
+          </h3>
+
+          <div class="flex items-center gap-1 mt-3">
+            <span style="color: #F0A500;">★★★★★</span>
+            <span class="text-sm text-gray-400">(4.5)</span>
+          </div>
+
+          <p class="mt-2 text-sm text-gray-500 leading-6">
+            Delicious crispy burger with fresh vegetables and sauce.
+          </p>
+
+          <button class="w-full mt-5 py-3 rounded-xl text-white font-semibold
+                 transition duration-300 hover:opacity-90 hover:scale-[1.02]" style="background-color: #F0A500;">
+            Add to Cart
+          </button>
+
+        </div>
+      </div>
+
+
+      <!-- ================= CARD 6 ================= -->
+      <div class="group bg-white rounded-2xl overflow-hidden border border-gray-200
+             shadow-sm hover:shadow-xl transition duration-300 hover:-translate-y-1">
+
+        <div class="relative h-56 overflow-hidden">
+
+          <img src="/src/assets/images/foods/Grill_Chicken.jpg" alt="Grilled Chicken"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+
+          <span class="absolute top-4 right-4 px-4 py-2 rounded-full
+                 text-white text-sm font-bold shadow" style="background-color: #F0A500;">
+            $14.00
+          </span>
+
+        </div>
+
+        <div class="p-5">
+
+          <h3 class="text-xl font-bold text-slate-900">
+            Grilled Chicken
+          </h3>
+
+          <div class="flex items-center gap-1 mt-3">
+            <span style="color: #F0A500;">★★★★★</span>
+            <span class="text-sm text-gray-400">(4.5)</span>
+          </div>
+
+          <p class="mt-2 text-sm text-gray-500 leading-6">
+            Tender grilled chicken with fresh salad and herbs.
+          </p>
+
+          <button class="w-full mt-5 py-3 rounded-xl text-white font-semibold
+                 transition duration-300 hover:opacity-90 hover:scale-[1.02]" style="background-color: #F0A500;">
+            Add to Cart
+          </button>
+
+        </div>
+      </div>
+
+
+      <!-- ================= CARD 7 ================= -->
+      <div class="group bg-white rounded-2xl overflow-hidden border border-gray-200
+             shadow-sm hover:shadow-xl transition duration-300 hover:-translate-y-1">
+
+        <div class="relative h-56 overflow-hidden">
+
+          <img src="/src/assets/images/foods/Pasta.jpg" alt="Pasta"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+
+          <span class="absolute top-4 right-4 px-4 py-2 rounded-full
+                 text-white text-sm font-bold shadow" style="background-color: #F0A500;">
+            $11.00
+          </span>
+
+        </div>
+
+        <div class="p-5">
+
+          <h3 class="text-xl font-bold text-slate-900">
+            Pasta
+          </h3>
+
+          <div class="flex items-center gap-1 mt-3">
+            <span style="color: #F0A500;">★★★★☆</span>
+            <span class="text-sm text-gray-400">(4.0)</span>
+          </div>
+
+          <p class="mt-2 text-sm text-gray-500 leading-6">
+            Creamy pasta with herbs and special sauce.
+          </p>
+
+          <button class="w-full mt-5 py-3 rounded-xl text-white font-semibold
+                 transition duration-300 hover:opacity-90 hover:scale-[1.02]" style="background-color: #F0A500;">
+            Add to Cart
+          </button>
+
+        </div>
+      </div>
+
+
+      <!-- ================= CARD 8 ================= -->
+      <div class="group bg-white rounded-2xl overflow-hidden border border-gray-200
+             shadow-sm hover:shadow-xl transition duration-300 hover:-translate-y-1">
+
+        <div class="relative h-56 overflow-hidden">
+
+          <img src="/src/assets/images/foods/Seekh_Kebab.jpg" alt="Seekh Kebab"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+
+          <span class="absolute top-4 right-4 px-4 py-2 rounded-full
+                 text-white text-sm font-bold shadow" style="background-color: #F0A500;">
+            $13.00
+          </span>
+
+        </div>
+
+        <div class="p-5">
+
+          <h3 class="text-xl font-bold text-slate-900">
+            Seekh Kebab
+          </h3>
+
+          <div class="flex items-center gap-1 mt-3">
+            <span style="color: #F0A500;">★★★★★</span>
+            <span class="text-sm text-gray-400">(4.0)</span>
+          </div>
+
+          <p class="mt-2 text-sm text-gray-500 leading-6">
+            Juicy and flavorful kebabs with traditional spices.
+          </p>
+
+          <button class="w-full mt-5 py-3 rounded-xl text-white font-semibold
+                 transition duration-300 hover:opacity-90 hover:scale-[1.02]" style="background-color: #F0A500;">
+            Add to Cart
+          </button>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-slate-950 text-white">
+
+    <!-- Main Footer -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+        <!-- Brand -->
+        <div>
+          <img src="/src/assets/images/logo-2.png" alt="FoodHub Logo"
+            class="w-[220px] rounded-[10px] h-auto object-contain" />
+          </a>
+
+          <p class="mt-5 text-gray-400 leading-7 text-sm max-w-xs">
+            Delicious food made with love and delivered fresh
+            right to your doorstep.
+          </p>
+
+          <!-- Social Icons -->
+          <div class="flex items-center gap-3 mt-6">
+
+            <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center
+                     hover:bg-[#F0A500] transition duration-300">
+              f
+            </a>
+
+            <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center
+                     hover:bg-[#F0A500] transition duration-300">
+              ◎
+            </a>
+
+            <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center
+                     hover:bg-[#F0A500] transition duration-300">
+              𝕏
+            </a>
+
+            <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center
+                     hover:bg-[#F0A500] transition duration-300">
+              ▶
+            </a>
+
+          </div>
+        </div>
+
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-lg font-bold mb-5">
+            Quick Links
+          </h3>
+
+          <ul class="space-y-3 text-sm">
+
+            <li>
+              <a href="#" class="text-gray-400 hover:text-[#F0A500] transition">
+                Home
+              </a>
+            </li>
+
+            <li>
+              <a href="#menu" class="text-gray-400 hover:text-[#F0A500] transition">
+                Our Menu
+              </a>
+            </li>
+
+            <li>
+              <a href="#about" class="text-gray-400 hover:text-[#F0A500] transition">
+                About Us
+              </a>
+            </li>
+
+            <li>
+              <a href="#contact" class="text-gray-400 hover:text-[#F0A500] transition">
+                Contact
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+
+        <!-- Contact -->
+        <div>
+          <h3 class="text-lg font-bold mb-5">
+            Contact Us
+          </h3>
+
+          <ul class="space-y-4 text-sm">
+
+            <li class="flex items-start gap-3">
+              <span style="color: #F0A500;">📍</span>
+              <span class="text-gray-400">
+                Dhaka, Bangladesh
+              </span>
+            </li>
+
+            <li class="flex items-center gap-3">
+              <span style="color: #F0A500;">📞</span>
+              <a href="tel:+8801234567890" class="text-gray-400 hover:text-[#F0A500] transition">
+                +880 1234-567890
+              </a>
+            </li>
+
+            <li class="flex items-center gap-3">
+              <span style="color: #F0A500;">✉️</span>
+              <a href="mailto:info@foodhub.com" class="text-gray-400 hover:text-[#F0A500] transition">
+                info@foodhub.com
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+
+        <!-- Opening Hours -->
+        <div>
+          <h3 class="text-lg font-bold mb-5">
+            Opening Hours
+          </h3>
+
+          <div class="space-y-3 text-sm">
+
+            <div class="flex justify-between gap-5">
+              <span class="text-gray-400">
+                Monday - Friday
+              </span>
+              <span style="color: #F0A500;">
+                10AM - 10PM
+              </span>
+            </div>
+
+            <div class="flex justify-between gap-5">
+              <span class="text-gray-400">
+                Saturday
+              </span>
+              <span style="color: #F0A500;">
+                10AM - 11PM
+              </span>
+            </div>
+
+            <div class="flex justify-between gap-5">
+              <span class="text-gray-400">
+                Sunday
+              </span>
+              <span style="color: #F0A500;">
+                12PM - 10PM
+              </span>
+            </div>
+
+          </div>
+
+          <!-- Order Button -->
+          <a href="#menu" class="inline-block mt-6 px-6 py-3 rounded-full
+                   text-white font-semibold transition duration-300
+                   hover:scale-105" style="background-color: #F0A500;">
+            Order Now 🍔
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- Bottom Footer -->
+    <div class="border-t border-white/10">
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5
+               flex flex-col md:flex-row items-center justify-between
+               gap-3 text-sm">
+
+        <p class="text-gray-500 text-center">
+          © 2026
+          <span style="color: #F0A500;">FoodHub</span>.
+          All rights reserved.
+        </p>
+
+        <div class="flex items-center gap-5">
+
+          <a href="#" class="text-gray-500 hover:text-[#F0A500] transition">
+            Privacy Policy
+          </a>
+
+          <a href="#" class="text-gray-500 hover:text-[#F0A500] transition">
+            Terms & Conditions
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
